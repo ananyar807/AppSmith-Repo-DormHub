@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "getResidentYears",
+    "name": "get_interets",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/rd/getResidentYears"
+        "url": "web:4000/r/resident_all_interests"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "RD Persona Resident Page",
+    "pageId": "Resident Interests Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "RD Persona Resident Page_getResidentYears",
+  "id": "Resident Interests Page_get_interets",
   "deleted": false,
-  "gitSyncId": "643dc2b6d9b85d55f770fc19_643dc7fdd9b85d55f770fc23"
+  "gitSyncId": "643eb56019c29619aae8867d_643eba8f19c29619aae88698"
 }
