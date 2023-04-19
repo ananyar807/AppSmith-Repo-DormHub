@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 760,
+          "bottomRow": 780,
           "containerStyle": "none",
           "snapRows": 56,
           "parentRowSpace": 1,
@@ -29,7 +29,7 @@
               "tabId": "",
               "boxShadow": "NONE",
               "widgetName": "Container1",
-              "borderColor": "#E0DEDE",
+              "borderColor": "#fce7f3",
               "isCanvas": true,
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
@@ -39,7 +39,7 @@
                 "group"
               ],
               "topRow": 5,
-              "bottomRow": 76,
+              "bottomRow": 78,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -303,11 +303,11 @@
                   ]
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "6",
               "key": "q8ejxgs0qm",
               "backgroundColor": "#c7d2fe",
               "isDeprecated": false,
-              "rightColumn": 61,
+              "rightColumn": 58,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "nzictn60zw",
               "containerStyle": "card",
@@ -320,7 +320,7 @@
               "responsiveBehavior": "fill",
               "originalTopRow": 5,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 76,
+              "originalBottomRow": 78,
               "minDynamicHeight": 10
             }
           ]
