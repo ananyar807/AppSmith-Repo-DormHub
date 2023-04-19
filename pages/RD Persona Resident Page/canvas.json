@@ -102,6 +102,12 @@
                         },
                         {
                           "key": "primaryColumns.year.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ra_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.student_id.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -139,7 +145,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681770972187,
+                      "columnUpdatedAt": 1681868267086,
                       "originalBottomRow": 129,
                       "defaultSelectedRowIndices": [
                         0
@@ -147,6 +153,8 @@
                       "widgetName": "ResidentYears",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "student_id",
+                        "ra_id",
                         "year"
                       ],
                       "dynamicPropertyPathList": [],
@@ -188,6 +196,64 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{ResidentYears.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"year\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "ra_id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "ra_id",
+                          "id": "ra_id",
+                          "alias": "ra_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "RA ID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{ResidentYears.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ra_id\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "student_id": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "student_id",
+                          "id": "student_id",
+                          "alias": "student_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Student ID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{ResidentYears.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"student_id\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -312,7 +378,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{update_ra_for_resident.run()}}",
+                              "onClick": "{{update_ra_for_resident.run(() => getResidentYears.run(), () => {})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",

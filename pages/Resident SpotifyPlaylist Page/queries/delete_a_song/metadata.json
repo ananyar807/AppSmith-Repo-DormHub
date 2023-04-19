@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "add_new_interests",
+    "name": "delete_a_song",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/r/addNewInterest"
+        "url": "web:4000/r/SpotifyPlaylist/delete"
       },
       "invalids": [],
       "messages": [],
@@ -29,10 +28,19 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
-      "body": "{{new_song_form.data}}",
+      "queryParameters": [
+        {
+          "key": "artist",
+          "value": "'{{the_artist.text}}'"
+        },
+        {
+          "key": "song",
+          "value": "'{{the_song.text}}'"
+        }
+      ],
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -40,27 +48,31 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "new_song_form.data"
+      "the_artist.text",
+      "the_song.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Resident SpotifyPlaylist Page_add_new_interests",
+  "id": "Resident SpotifyPlaylist Page_delete_a_song",
   "deleted": false,
-  "gitSyncId": "643eb56019c29619aae8867d_643ecd3f19c29619aae886b2"
+  "gitSyncId": "643f0a357a31c6006bfb15c1_643f3c277a31c6006bfb15ea"
 }

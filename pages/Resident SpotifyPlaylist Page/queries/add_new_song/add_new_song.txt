@@ -1,0 +1,7 @@
+{
+	"student_id": {{student_id.text}}, 
+	"artist": {{artist.text}},
+	"album": {{album.text}},
+	"genre": {{genre.text}},
+	"song": {{song.text}}
+}

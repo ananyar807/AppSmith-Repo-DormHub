@@ -29,7 +29,16 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "ra_id",
+          "value": "'{{ra_id.text}}'"
+        },
+        {
+          "key": "student_id",
+          "value": "'{{student_id.text}}'"
+        }
+      ],
       "body": "{{update_ra_form.data}}",
       "bodyFormData": [],
       "httpMethod": "PUT",
@@ -47,12 +56,20 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "ra_id.text",
+      "student_id.text",
       "update_ra_form.data"
     ],
     "userSetOnLoad": false,

@@ -101,6 +101,9 @@
                         },
                         {
                           "key": "primaryColumns.start_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ra_id.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -138,7 +141,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681772777027,
+                      "columnUpdatedAt": 1681868384529,
                       "originalBottomRow": 69,
                       "defaultSelectedRowIndices": [
                         0
@@ -146,6 +149,7 @@
                       "widgetName": "StartTimes",
                       "defaultPageSize": 0,
                       "columnOrder": [
+                        "ra_id",
                         "start_time"
                       ],
                       "dynamicPropertyPathList": [],
@@ -187,6 +191,35 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{StartTimes.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"start_time\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "ra_id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "ra_id",
+                          "id": "ra_id",
+                          "alias": "ra_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "RA ID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{StartTimes.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ra_id\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
