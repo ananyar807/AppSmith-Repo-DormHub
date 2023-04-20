@@ -1,11 +1,21 @@
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
+# DormHub Appsmith UI Pages
 
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
+## Resident Persona
 
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
+### 1. Resident Interests Page
+- GET: table of interests (/resident_all_interests)
+- POST: add a new resident interests (/addNewInterests)
 
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
+### 2. Spotify Playlist Page
+- GET: Table of songs (/all_spotifyPlaylist)
+- POST: Input new song (/addNewSong)
+- DELETE: Delete song (/SpotifyPlaylist/delete)
 
-##### You can visit the application using the below link
+## Resident Director Persona
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://localhost:8080/applications/643dc2b6d9b85d55f770fc19/pages/643dc2b7d9b85d55f770fc1c) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://localhost:8080/applications/643dc2b6d9b85d55f770fc19/pages/643dc2b7d9b85d55f770fc1c/edit)
+### 1. Weekly Schedule Page
+- GET: table of start times (/getStartTimes)
+
+### 2. Residents Information Page
+- GET: table of resident years (/getResidentYears)
+- PUT: Update RA ID for specific student (/Residents)
