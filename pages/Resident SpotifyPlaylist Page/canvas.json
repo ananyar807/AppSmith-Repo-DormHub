@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1320,
+          "bottomRow": 1520,
           "containerStyle": "none",
           "snapRows": 108,
           "parentRowSpace": 1,
@@ -29,16 +29,20 @@
             {
               "boxShadow": "none",
               "widgetName": "Full_container",
-              "borderColor": "rgba(0, 0, 0, 0.06)",
-              "topRow": 7,
-              "bottomRow": 124,
+              "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
+              "topRow": 3,
+              "bottomRow": 144,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "shouldScrollContents": true,
               "parentColumnSpace": 6.78125,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderColor"
+                }
+              ],
               "children": [
                 {
                   "labelTextSize": "0.875rem",
@@ -49,7 +53,7 @@
                   "widgetId": "89bt22aobo",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 1370,
+                  "bottomRow": 1400,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "canExtend": false,
@@ -65,8 +69,8 @@
                   "borderRadius": "0px",
                   "children": [
                     {
-                      "widgetName": "TitleCopyCopy",
-                      "borderColor": "rgba(0, 0, 0, 0.06)",
+                      "widgetName": "Page_title",
+                      "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -94,6 +98,9 @@
                         },
                         {
                           "key": "textColor"
+                        },
+                        {
+                          "key": "borderColor"
                         }
                       ],
                       "shouldTruncate": false,
@@ -128,7 +135,7 @@
                       "borderColor": "#ecebe8",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 58,
+                      "topRow": 66,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -160,7 +167,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 1,
+                      "leftColumn": 2,
                       "delimiter": ",",
                       "variant": "DEFAULT",
                       "defaultSelectedRowIndex": 0,
@@ -198,7 +205,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "columnUpdatedAt": 1681838090503,
-                      "originalBottomRow": 137,
+                      "originalBottomRow": 130,
                       "primaryColumnId": "student_id",
                       "defaultSelectedRowIndices": [
                         0
@@ -214,7 +221,7 @@
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
-                      "bottomRow": 137,
+                      "bottomRow": 130,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -375,7 +382,7 @@
                       "key": "qjkdxnyifk",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "ltlax22ilo",
                       "minWidth": 450,
@@ -387,7 +394,7 @@
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 58,
+                      "originalTopRow": 66,
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
@@ -401,8 +408,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 8,
-                      "bottomRow": 58,
+                      "topRow": 11,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -410,7 +417,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 12.25,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -424,7 +431,7 @@
                           "widgetName": "Canvas4",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 490,
+                          "bottomRow": 540,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -446,8 +453,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 43,
-                              "bottomRow": 47,
+                              "topRow": 46,
+                              "bottomRow": 50,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -501,6 +508,7 @@
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
+                              "shouldScrollContents": true,
                               "animateLoading": true,
                               "parentColumnSpace": 6.53125,
                               "dynamicTriggerPathList": [],
@@ -512,7 +520,7 @@
                                   "widgetName": "Canvas3",
                                   "displayName": "Canvas",
                                   "topRow": 0,
-                                  "bottomRow": 110,
+                                  "bottomRow": 190,
                                   "parentRowSpace": 1,
                                   "type": "CANVAS_WIDGET",
                                   "canExtend": false,
@@ -558,7 +566,7 @@
                                     },
                                     {
                                       "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                      "widgetName": "camp_image",
+                                      "widgetName": "spotify_image",
                                       "dynamicPropertyPathList": [],
                                       "topRow": 0,
                                       "bottomRow": 9,
@@ -575,6 +583,32 @@
                                       "rightColumn": 61,
                                       "objectFit": "cover",
                                       "widgetId": "zub29q278k",
+                                      "isVisible": true,
+                                      "version": 1,
+                                      "parentId": "347484p028",
+                                      "isLoading": false,
+                                      "maxZoomLevel": 1,
+                                      "borderRadius": "0.375rem"
+                                    },
+                                    {
+                                      "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                                      "widgetName": "camp_imageCopy",
+                                      "dynamicPropertyPathList": [],
+                                      "topRow": 10,
+                                      "bottomRow": 19,
+                                      "parentRowSpace": 10,
+                                      "type": "IMAGE_WIDGET",
+                                      "parentColumnSpace": 6.78125,
+                                      "dynamicTriggerPathList": [],
+                                      "imageShape": "RECTANGLE",
+                                      "leftColumn": 47,
+                                      "dynamicBindingPathList": [],
+                                      "defaultImage": "",
+                                      "labelTextSize": "0.875rem",
+                                      "image": "https://i.ibb.co/VvP10j0/spotify.png",
+                                      "rightColumn": 61,
+                                      "objectFit": "cover",
+                                      "widgetId": "bsce7086er",
                                       "isVisible": true,
                                       "version": 1,
                                       "parentId": "347484p028",
@@ -941,7 +975,7 @@
                       "key": "9ogapzylr1",
                       "backgroundColor": "black",
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 31,
                       "dynamicHeight": "FIXED",
                       "widgetId": "21qvqm8wzf",
                       "minWidth": 450,
@@ -950,10 +984,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 8,
+                      "originalTopRow": 11,
                       "borderRadius": "0.375rem",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 58,
+                      "originalBottomRow": 65,
                       "minDynamicHeight": 10
                     },
                     {
@@ -966,8 +1000,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 8,
-                      "bottomRow": 58,
+                      "topRow": 11,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -989,7 +1023,7 @@
                           "widgetName": "Canvas4Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 500,
+                          "bottomRow": 540,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -1011,8 +1045,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 43,
-                              "bottomRow": 47,
+                              "topRow": 46,
+                              "bottomRow": 50,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -1051,7 +1085,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Container2Copy",
+                              "widgetName": "Container3",
                               "borderColor": "transparent",
                               "isCanvas": true,
                               "dynamicPropertyPathList": [
@@ -1123,7 +1157,7 @@
                                     },
                                     {
                                       "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-                                      "widgetName": "camp_imageCopy",
+                                      "widgetName": "delete_song_image",
                                       "dynamicPropertyPathList": [],
                                       "topRow": 0,
                                       "bottomRow": 9,
@@ -1132,14 +1166,14 @@
                                       "parentColumnSpace": 6.78125,
                                       "dynamicTriggerPathList": [],
                                       "imageShape": "RECTANGLE",
-                                      "leftColumn": 46,
+                                      "leftColumn": 47,
                                       "dynamicBindingPathList": [],
                                       "defaultImage": "",
                                       "labelTextSize": "0.875rem",
-                                      "image": "https://i.ibb.co/VvP10j0/spotify.png",
+                                      "image": "https://i.ibb.co/dfvNx3T/delete-song.png",
                                       "rightColumn": 61,
                                       "objectFit": "cover",
-                                      "widgetId": "5p7kyrumyc",
+                                      "widgetId": "po45jodkeq",
                                       "isVisible": true,
                                       "version": 1,
                                       "parentId": "2w4k4wyw26",
@@ -1323,7 +1357,7 @@
                       "key": "9ogapzylr1",
                       "backgroundColor": "black",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 61,
                       "dynamicHeight": "FIXED",
                       "widgetId": "faovki20dd",
                       "minWidth": 450,
@@ -1332,18 +1366,19 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 8,
+                      "originalTopRow": 11,
                       "borderRadius": "0.375rem",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 58,
+                      "originalBottomRow": 65,
                       "minDynamicHeight": 10
                     }
                   ]
                 }
               ],
+              "borderWidth": "5",
               "labelTextSize": "0.875rem",
               "backgroundColor": "#1db954",
-              "rightColumn": 62,
+              "rightColumn": 60,
               "dynamicHeight": "FIXED",
               "widgetId": "3j5sidzm1v",
               "containerStyle": "card",
@@ -1351,7 +1386,7 @@
               "version": 1,
               "parentId": "0",
               "isLoading": false,
-              "borderRadius": "0px",
+              "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
             }

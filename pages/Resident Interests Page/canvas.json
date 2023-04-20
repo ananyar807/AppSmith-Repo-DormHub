@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1120,
+          "bottomRow": 1370,
           "containerStyle": "none",
           "snapRows": 108,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "widgetName": "Full_container",
               "borderColor": "#fad5a5",
               "topRow": 5,
-              "bottomRow": 112,
+              "bottomRow": 129,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "parentColumnSpace": 6.78125,
@@ -48,7 +48,7 @@
                   "widgetId": "89bt22aobo",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 1180,
+                  "bottomRow": 1230,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "canExtend": false,
@@ -91,7 +91,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 1,
+                      "leftColumn": 5,
                       "delimiter": ",",
                       "variant": "DEFAULT",
                       "defaultSelectedRowIndex": 0,
@@ -145,7 +145,8 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
-                        "status": 85
+                        "status": 85,
+                        "interests": 425.10107421875
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -215,7 +216,7 @@
                       "key": "qjkdxnyifk",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 57,
                       "textSize": "0.875rem",
                       "widgetId": "ltlax22ilo",
                       "minWidth": 450,
@@ -241,8 +242,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 54,
+                      "topRow": 10,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -250,7 +251,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 12.25,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 5,
                       "dynamicBindingPathList": [
                         {
                           "key": "boxShadow"
@@ -597,7 +598,7 @@
                       "key": "9ogapzylr1",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 57,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "21qvqm8wzf",
                       "minWidth": 450,
@@ -606,14 +607,14 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 11,
+                      "originalTopRow": 10,
                       "borderRadius": "0.375rem",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 54,
+                      "originalBottomRow": 53,
                       "minDynamicHeight": 10
                     },
                     {
-                      "widgetName": "TitleCopy",
+                      "widgetName": "Page_Title",
                       "borderColor": "rgba(0, 0, 0, 0.06)",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
